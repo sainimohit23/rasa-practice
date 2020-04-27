@@ -1,8 +1,27 @@
+## search hospital happy path
+* greet
+  - utter_greet
+* search_provider("facility_type":"hospital", "location":"San Francisco")
+  - action_facility_search
+  - slot{"address":"300 Hyde St, San Francisco"}
+* thanks
+  - utter_goodbye
+
+## search hospital + location
+* greet
+  - utter_greet
+* search_provider("facility_type":"hospital"}
+  - utter_ask_location
+* inform{"location":"San Francisco"}
+  - action_facility_search
+* thanks
+  - utter_goodbye
+
 ## happy path
 * greet
   - utter_greet
 * mood_great
-  - utter_happy
+  - utter_happy   
 
 ## sad path 1
 * greet

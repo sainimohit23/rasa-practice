@@ -54,3 +54,20 @@
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+
+## intent:inform
+- [Delhi](location)
+- [Mumbai](location)
+- [Miami](location)
+- [Bangalore](location)
+- [California](location)
+- [islamabad](location)
+- [london](location)
+
+## intent:search_provider
+- I need a [hospital](facility_type)
+- find me a nearby [hospital](facility_type)
+- show me [home health agencies](facility_type)
+- [hospital](facility_type)
+- find me a nearby [hospital](facility_type) in [san francisco](location)
+- I need a [home health agency](facility_type)
